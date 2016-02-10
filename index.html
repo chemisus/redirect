@@ -1,6 +1,7 @@
 <html>
-    <head>
-<script>
+    <head></head>
+    <body>
+        <script>
 function param(src, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -10,7 +11,8 @@ function param(src, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-document.write('<meta http-equiv="refresh" content="5; url=' + param('src') + '">')
+document.write(param('data'));
 </script>
-</head>
+
+    </body>
 </html>
