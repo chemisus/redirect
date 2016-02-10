@@ -1,4 +1,5 @@
 <html>
+    <head>
 <script>
 function param(src, url) {
     if (!url) url = window.location.href;
@@ -9,6 +10,7 @@ function param(src, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-window.location.href = param("src");
+document.write('<meta http-equiv="refresh" content="0; url=' + param('src') + '">')
 </script>
+</head>
 </html>
