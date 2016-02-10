@@ -9,6 +9,6 @@ function param(src, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-window.location.replace(param("src"));
+window.location.href = param("src");
 </script>
 </html>
